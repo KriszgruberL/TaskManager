@@ -1,27 +1,90 @@
-# TaskManager
+# TailWind CSS
+<br>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+## Installer TailWind CSS
+```
+    npm install -D tailwindcss postcss autoprefixer
+```
 
-## Development server
+<hr>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Créer le fichier de configuration
+```
+    npx tailwindcss init
+```
+<hr>
 
-## Code scaffolding
+## Ajouter le path
+```
+    content: [
+    "./src/**/*.{html,ts}",
+    ],
+```
+<hr>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Ajouter les directives dans le style.css
 
-## Build
+```
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+```
+<hr>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Ajouter les directives dans le style.css
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+```
 
-## Running end-to-end tests
+<hr>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Relancer Angular 
 
-## Further help
+```
+    ng s --o
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<hr>
+<br>
+
+## Ajouter des couleurs 
+
+```
+    theme: {
+    extend: {
+      colors: {
+        primary: {
+            100: '#B0ABAB',
+            ...
+            900: '#0B0A0A',
+        },
+        secondary: {
+            ...
+        },
+      }
+    },
+  },
+```
+
+<hr>
+<br>
+
+
+
+
+# Extension VS Code 
+
+
+```
+    Tailwind CSS IntelliSense by Tailwind Labs
+```
+<hr>
+
+
+
+
+
